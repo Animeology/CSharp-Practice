@@ -4,7 +4,8 @@ class CSharpPractice
 {
     static void Main(string[] args)
     {
-        HelloWorld();
+        PrintLines();
+        // HelloWorld();
     }
 
     static void HelloWorld()
@@ -12,6 +13,10 @@ class CSharpPractice
         Console.Write("Hello World!");
     }
 
-
+    static void PrintLines()
+    {
+        Console.WriteLine("Hello");
+        Console.WriteLine("Joseph");
+    }
 }
 
