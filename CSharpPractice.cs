@@ -4,7 +4,8 @@ class CSharpPractice
 {
     static void Main(string[] args)
     {
-        PrintLines();
+        ReadUserInput();
+        // PrintLines();
         // HelloWorld();
     }
 
@@ -17,6 +18,13 @@ class CSharpPractice
     {
         Console.WriteLine("Hello");
         Console.WriteLine("Joseph");
+    }
+
+    static void ReadUserInput()
+    {
+        Console.WriteLine("What is your favorite animal?");
+        Console.Read();
+        Console.WriteLine("Mine too!");
     }
 }
 
