@@ -4,20 +4,16 @@ class CSharpPractice
 {
     static void Main(string[] args)
     {
-        ReadUserInput();
+        // StoreUserInput();
+        // ReadUserInput();
         // PrintLines();
         // HelloWorld();
     }
-
-    static void HelloWorld()
+    static void StoreUserInput()
     {
-        Console.Write("Hello World!");
-    }
-
-    static void PrintLines()
-    {
-        Console.WriteLine("Hello");
-        Console.WriteLine("Joseph");
+        Console.WriteLine("What is your name?");
+        string x = Console.ReadLine();
+        Console.WriteLine("Nice to meet you, " + x);
     }
 
     static void ReadUserInput()
@@ -26,5 +22,17 @@ class CSharpPractice
         Console.Read();
         Console.WriteLine("Mine too!");
     }
+
+    static void PrintLines()
+    {
+        Console.WriteLine("Hello");
+        Console.WriteLine("Joseph");
+    }
+
+    static void HelloWorld()
+    {
+        Console.Write("Hello World!");
+    }
+
 }
 
