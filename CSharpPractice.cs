@@ -4,11 +4,18 @@ class CSharpPractice
 {
     static void Main(string[] args)
     {
+        Comment();
         // StoreUserInput();
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
     }
+
+    static void Comment()
+    {
+        // This is a comment
+    }
+
     static void StoreUserInput()
     {
         Console.WriteLine("What is your name?");
