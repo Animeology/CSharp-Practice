@@ -9,7 +9,9 @@ class CSharpPractice
 
     static void HelloWorld()
     {
-        Console.WriteLine("Hello World!");
+        Console.Write("Hello World!");
     }
+
+
 }
 
