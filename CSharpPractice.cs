@@ -2,7 +2,8 @@
 {
     static void Main(string[] args)
     {
-        Reverse();
+        CalculateTemperature();
+        // Reverse();
         // Calculator();
         // CalculateShapeFromRadius();
         // Comment();
@@ -10,6 +11,22 @@
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void CalculateTemperature()
+    {
+        Console.WriteLine("Input your degree in Celsius to convert to Kelvin and Fahrenheit:");
+
+        int celsius = Convert.ToInt32(Console.ReadLine());
+
+        int kelvin = celsius + 273;
+        int fahrenheit = celsius * 18 / 10 + 32;
+
+        Console.WriteLine("Kelvin: " + kelvin + " degrees");
+        Console.WriteLine("Fahrenheit: " + fahrenheit + " degrees");
+
+        Console.WriteLine("Kelvin = {0}", kelvin);
+        Console.WriteLine("Fahrenheit = {0}", fahrenheit);
     }
 
     static void Reverse()
@@ -25,7 +42,7 @@
 
     static void Calculator()
     {
-        Console.WriteLine("Input 2 numbers to calculate through all operations: ");
+        Console.WriteLine("Input 2 numbers to calculate through all operations:");
 
         int x = Convert.ToInt32(Console.ReadLine());
         int y = Convert.ToInt32(Console.ReadLine());
@@ -45,7 +62,7 @@
 
     static void CalculateShapeFromRadius()
     {
-        Console.WriteLine("Input a radius of your choice to calculate the Surface and Volume of the shape: ");
+        Console.WriteLine("Input a radius of your choice to calculate the Surface and Volume of the shape:");
 
         float radius = Convert.ToSingle(Console.ReadLine());
         float pi = 3.14159265359f;
