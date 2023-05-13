@@ -2,13 +2,25 @@
 {
     static void Main(string[] args)
     {
-        Calculator();
+        Reverse();
+        // Calculator();
         // CalculateShapeFromRadius();
         // Comment();
         // StoreUserInput();
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void Reverse()
+    {
+        Console.WriteLine("Input 3 letters to print out in reverse:");
+
+        char a = Convert.ToChar(Console.ReadLine());
+        char b = Convert.ToChar(Console.ReadLine());
+        char c = Convert.ToChar(Console.ReadLine());
+
+        Console.WriteLine("{0}, {1}, {2}", c, b, a);
     }
 
     static void Calculator()
