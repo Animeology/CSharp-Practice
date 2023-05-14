@@ -2,7 +2,8 @@
 {
     static void Main(string[] args)
     {
-        MultiplyThreeFactors();
+        DivisionAndModule();
+        // MultiplyThreeFactors();
         // SquaredNumber();
         // RandomGenerator();
         // MultiplicationTable();
@@ -17,6 +18,17 @@
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void DivisionAndModule()
+    {
+        Console.WriteLine("Input two integers to get the division and rest of the division of the result");
+
+        int x = Convert.ToInt32(Console.ReadLine());
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("{0}", x / y);
+        Console.WriteLine("{0}", x % y);
     }
 
     static void MultiplyThreeFactors()
