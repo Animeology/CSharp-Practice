@@ -2,7 +2,8 @@
 {
     static void Main(string[] args)
     {
-        DivisionAndModule();
+        DivideByZero();
+        // DivisionAndModule();
         // MultiplyThreeFactors();
         // SquaredNumber();
         // RandomGenerator();
@@ -18,6 +19,23 @@
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void DivideByZero()
+    {
+        Console.WriteLine("Divide a number by zero and an exception will appear, otherwise it is just a normal division");
+
+        int x = Convert.ToInt32(Console.ReadLine());
+        int y = Convert.ToInt32(Console.ReadLine());
+        
+        try
+        {
+            Console.WriteLine(x / y);
+        }
+        catch(DivideByZeroException)
+        {
+            Console.WriteLine("Cannot Divide By Zero");
+        }
     }
 
     static void DivisionAndModule()
