@@ -2,7 +2,8 @@
 {
     static void Main(string[] args)
     {
-        IfCalculator();
+        SwitchCalculator();
+        // IfCalculator();
         // Rectangle();
         // Square();
         // Equivalent();
@@ -27,6 +28,36 @@
         // HelloWorld();
     }
 
+    static void SwitchCalculator()
+    {
+        Console.WriteLine("Input two numbers and operation and it would calculate for you");
+
+        int x = Convert.ToInt32(Console.ReadLine());
+        char op = Convert.ToChar(Console.ReadLine());
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        switch (op)
+        {
+            case '+':
+                Console.WriteLine("{0}+{1}={2}", x, y, x + y);
+                break;
+            case '-':
+                Console.WriteLine("{0}-{1}={2}", x, y, x - y);
+                break;
+            case 'x':
+            case '*':
+                Console.WriteLine("{0}x{1}={2}", x, y, x * y);
+                break;
+            case '/':
+                Console.WriteLine("{0}/{1}={2}", x, y, x / y);
+                break;
+            default:
+                Console.WriteLine("Unrecognized character");
+                break;
+        }
+    }
+
+
     static void IfCalculator()
     {
         Console.WriteLine("Input two numbers and operation and it would calculate for you");
@@ -35,7 +66,7 @@
         char op = Convert.ToChar(Console.ReadLine());
         int y = Convert.ToInt32(Console.ReadLine());
 
-        if(op == '+')
+        if (op == '+')
         {
             Console.WriteLine("{0}+{1}={2}", x, y, x + y);
         }
@@ -88,7 +119,7 @@
         int num = Convert.ToInt32(Console.ReadLine());
         int width = Convert.ToInt32(Console.ReadLine());
 
-        for(int i = 0; i < width; i++)
+        for (int i = 0; i < width; i++)
         {
             for (int j = 0; j < width; j++)
             {
@@ -145,12 +176,12 @@
 
         int x = Convert.ToInt32(Console.ReadLine());
         int y = Convert.ToInt32(Console.ReadLine());
-        
+
         try
         {
             Console.WriteLine(x / y);
         }
-        catch(DivideByZeroException)
+        catch (DivideByZeroException)
         {
             Console.WriteLine("Cannot Divide By Zero");
         }
@@ -186,7 +217,7 @@
 
         int num = Convert.ToInt32(Console.ReadLine());
         int squaredNum = (num * num);
-        
+
         Console.WriteLine("{0}x{0}={1}", num, squaredNum);
     }
 
@@ -208,8 +239,8 @@
         Console.WriteLine("Input the desire number to go through the multiplicatoin table to 10");
 
         int num = Convert.ToInt32(Console.ReadLine());
-        
-        for(int i = 1; i <= 10; i++)
+
+        for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine("{0}x{1}={2}", num, i, num * i);
         }
@@ -343,4 +374,5 @@
     }
 
 }
+
 
