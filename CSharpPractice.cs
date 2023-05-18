@@ -4,7 +4,8 @@ class CSharpPractice
 {
     static void Main(string[] args)
     {
-        OddDescending();
+        VowelOrNot();
+        // OddOrEvenDescending();
         // PrimeNumber();
         // Product();
         // AbsoluteValue();
@@ -44,7 +45,39 @@ class CSharpPractice
         // HelloWorld();
     }
 
-    static void OddDescending()
+    static void VowelOrNot()
+    {
+        Console.WriteLine("Input a letter and check if it is a vowel or not");
+
+        char letter = Convert.ToChar(Console.Read());
+
+        // If statement
+        if(letter == 'a' || letter  == 'e' || letter == 'i' || letter == 'o' || letter == 'u') 
+        {
+            Console.WriteLine("{0} is a vowel", letter);
+        }
+        else
+        {
+            Console.WriteLine("{0} is a vowel", letter);
+        }
+
+        // switch
+        //switch (letter)
+        //{
+        //    case 'a':
+        //    case 'e':
+        //    case 'i':
+        //    case 'o':
+        //    case 'u':
+        //        Console.WriteLine("{0} is a vowel", letter);
+        //        break;
+        //    default:
+        //        Console.WriteLine("{0} is a vowel", letter);
+        //        break;
+        //}
+    }
+
+    static void OddOrEvenDescending()
     {
         Console.WriteLine("Input two numbers which will be a range of numbers");
 
@@ -338,7 +371,7 @@ class CSharpPractice
         Console.WriteLine("Input two numbers and operation and it would calculate for you");
 
         int x = Convert.ToInt32(Console.ReadLine());
-        char op = Convert.ToChar(Console.ReadLine());
+        char op = Convert.ToChar(Console.Read());
         int y = Convert.ToInt32(Console.ReadLine());
 
         switch (op)
@@ -368,7 +401,7 @@ class CSharpPractice
         Console.WriteLine("Input two numbers and operation and it would calculate for you");
 
         int x = Convert.ToInt32(Console.ReadLine());
-        char op = Convert.ToChar(Console.ReadLine());
+        char op = Convert.ToChar(Console.Read());
         int y = Convert.ToInt32(Console.ReadLine());
 
         if (op == '+')
@@ -607,9 +640,9 @@ class CSharpPractice
     {
         Console.WriteLine("Input 3 letters to print out in reverse:");
 
-        char a = Convert.ToChar(Console.ReadLine());
-        char b = Convert.ToChar(Console.ReadLine());
-        char c = Convert.ToChar(Console.ReadLine());
+        char a = Convert.ToChar(Console.Read());
+        char b = Convert.ToChar(Console.Read());
+        char c = Convert.ToChar(Console.Read());
 
         Console.WriteLine("{0}, {1}, {2}", c, b, a);
     }
