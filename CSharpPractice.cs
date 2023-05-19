@@ -5,8 +5,9 @@ class CSharpPractice
 
     static void Main(string[] args)
     {
-        Greeting();
-        Farewell();
+        GreetingAndFarewell("Joseph");
+        // Greeting();
+        // Farewell();
         // StructUsage();
         // CheckForEven();
         // ExceptionsChecker();
@@ -49,6 +50,14 @@ class CSharpPractice
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void GreetingAndFarewell(string name)
+    {
+        name = Console.ReadLine();
+
+        Console.WriteLine("Hello, {0}", name);
+        Console.WriteLine("Good Bye!");
     }
 
     static void Greeting()
