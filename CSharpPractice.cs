@@ -5,7 +5,15 @@ class CSharpPractice
 
     static void Main(string[] args)
     {
-        GreetingAndFarewell("Joseph");
+
+        int x = Convert.ToInt32(Console.ReadLine()); 
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(Add(x, y));
+
+        //string name = Console.ReadLine();
+        // GreetingAndFarewell(name);
+
         // Greeting();
         // Farewell();
         // StructUsage();
@@ -52,10 +60,13 @@ class CSharpPractice
         // HelloWorld();
     }
 
+    public static int Add(int x, int y)
+    {
+        return x + y;
+    }
+
     static void GreetingAndFarewell(string name)
     {
-        name = Console.ReadLine();
-
         Console.WriteLine("Hello, {0}", name);
         Console.WriteLine("Good Bye!");
     }
