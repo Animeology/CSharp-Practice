@@ -2,9 +2,11 @@
 
 class CSharpPractice
 {
+
     static void Main(string[] args)
     {
-        CheckForEven();
+        StructUsage();
+        // CheckForEven();
         // ExceptionsChecker();
         // VowelOrNot();
         // OddOrEvenDescending();
@@ -46,6 +48,22 @@ class CSharpPractice
         // PrintLines();
         // HelloWorld();
     }
+    struct Person
+    {
+        public string name;
+        public int age;
+    }
+
+    static void StructUsage()
+    {
+        Person p;
+        p.name = "Joseph";
+        p.age = 25;
+
+        Console.WriteLine("Hello, {0}", p.name);
+        Console.WriteLine("You are {0}", p.age);
+    }
+
 
     static void CheckForEven()
     {
@@ -82,7 +100,7 @@ class CSharpPractice
         char letter = Convert.ToChar(Console.Read());
 
         // If statement
-        if(letter == 'a' || letter  == 'e' || letter == 'i' || letter == 'o' || letter == 'u') 
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
         {
             Console.WriteLine("{0} is a vowel", letter);
         }
@@ -117,13 +135,13 @@ class CSharpPractice
         Console.WriteLine("Odd or Even?");
         string choice = Console.ReadLine();
 
-        switch(choice)
+        switch (choice)
         {
             case "odd":
             case "Odd":
-                for(int i = x; i >= y; i--)
+                for (int i = x; i >= y; i--)
                 {
-                    if(i % 2 != 0)
+                    if (i % 2 != 0)
                     {
                         Console.Write("{0}, ", i);
                     }
@@ -153,12 +171,12 @@ class CSharpPractice
         int prime = Convert.ToInt32(Console.ReadLine());
         int divider = 2;
 
-        while(prime % divider != 0)
+        while (prime % divider != 0)
         {
             divider++;
         }
 
-        if(divider == prime)
+        if (divider == prime)
         {
             Console.WriteLine("{0} is a prime number", prime);
         }
@@ -177,7 +195,7 @@ class CSharpPractice
 
         int total = 0;
 
-        for(int i = 0; i < y; i++)
+        for (int i = 0; i < y; i++)
         {
             total += x;
         }
@@ -191,7 +209,7 @@ class CSharpPractice
 
         int num = Convert.ToInt32(Console.ReadLine());
 
-        if(num > 0)
+        if (num > 0)
         {
             Console.WriteLine("Absolute Value is {0}", num);
         }
@@ -201,7 +219,7 @@ class CSharpPractice
             Console.WriteLine("Absolute Value is {0}", num);
         }
     }
-    
+
     static void Digits()
     {
         Console.WriteLine("Input a number and it would print out how many digits are there");
@@ -209,13 +227,13 @@ class CSharpPractice
         int num = Convert.ToInt32(Console.ReadLine());
         int digits = 0;
 
-        if(num < 0)
+        if (num < 0)
         {
             Console.WriteLine("(Warning it is a negative number)");
             num = -num;
         }
 
-        while(num > 0)
+        while (num > 0)
         {
             num /= 10;
 
@@ -284,7 +302,7 @@ class CSharpPractice
         int num = Convert.ToInt32(Console.ReadLine());
         int repeat = Convert.ToInt32(Console.ReadLine());
 
-        for(int i = 0; i < repeat; i++)
+        for (int i = 0; i < repeat; i++)
         {
             Console.Write(num);
         }
@@ -295,9 +313,9 @@ class CSharpPractice
     {
         Console.WriteLine("Request a number and it would keep adding it until the number is 0");
 
-        int num; 
+        int num;
         int sum = 0;
-        
+
         do
         {
             num = Convert.ToInt32(Console.ReadLine());
@@ -316,7 +334,7 @@ class CSharpPractice
         int x = Convert.ToInt32(Console.ReadLine());
         int y = Convert.ToInt32(Console.ReadLine());
 
-        for(int i = x; i <= y; i++)
+        for (int i = x; i <= y; i++)
         {
             Console.Write("{0} ", i);
         }
@@ -373,7 +391,7 @@ class CSharpPractice
             Console.WriteLine(z);
         }
 
-        else 
+        else
         {
             Console.WriteLine("There are all equal");
         }
