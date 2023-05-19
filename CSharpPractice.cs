@@ -5,7 +5,9 @@ class CSharpPractice
 
     static void Main(string[] args)
     {
-        StructUsage();
+        Greeting();
+        Farewell();
+        // StructUsage();
         // CheckForEven();
         // ExceptionsChecker();
         // VowelOrNot();
@@ -48,6 +50,17 @@ class CSharpPractice
         // PrintLines();
         // HelloWorld();
     }
+
+    static void Greeting()
+    {
+        Console.WriteLine("Hello");
+    }
+
+    static void Farewell()
+    {
+        Console.WriteLine("Good Bye!");
+    }
+
     struct Person
     {
         public string name;
