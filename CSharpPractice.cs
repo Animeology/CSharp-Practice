@@ -5,7 +5,8 @@ class CSharpPractice
 
     static void Main(string[] args)
     {
-        WriteFile();
+        AppendFile();
+        // WriteFile();
         // FileRead();
         // UsingReadFile();
         // ReadFile();
@@ -63,14 +64,43 @@ class CSharpPractice
         // PrintLines();
         // HelloWorld();
     }
+    static void AppendFile()
+    {
+        Console.WriteLine("Write whatever and it will add to the current 'output.txt' file if created already");
+
+        string fileName = "output.txt";
+
+        if(File.Exists(fileName))
+        {
+            using (StreamWriter file = File.AppendText(fileName))
+            {
+                string line;
+
+                do
+                {
+                    line = Console.ReadLine();
+
+                    if (line.Length != 0)
+                    {
+                        file.WriteLine(line);
+                   
+                    }
+                }
+                while (line.Length != 0);
+            }
+        }
+        else
+        {
+            WriteFile();
+        }
+
+    }
 
     static void WriteFile()
     {
         Console.WriteLine("Write whatever you want and it will be write into the 'output.txt' file");
 
-        string writeText = Console.ReadLine();
         string fileName = "output.txt";
-
 
         // Using method
         using (StreamWriter file = File.CreateText(fileName))
