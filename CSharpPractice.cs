@@ -5,7 +5,8 @@ class CSharpPractice
 
     static void Main(string[] args)
     {
-        FileRead();
+        WriteFile();
+        // FileRead();
         // UsingReadFile();
         // ReadFile();
 
@@ -63,6 +64,33 @@ class CSharpPractice
         // HelloWorld();
     }
 
+    static void WriteFile()
+    {
+        Console.WriteLine("Write whatever you want and it will be write into the 'output.txt' file");
+
+        string writeText = Console.ReadLine();
+        string fileName = "output.txt";
+
+
+        // Using method
+        using (StreamWriter file = File.CreateText(fileName))
+        {
+            string line;
+
+            do
+            {
+                line = Console.ReadLine();
+
+                if(line.Length != 0)
+                {
+                    file.WriteLine(line);
+                }
+            }
+            while(line.Length != 0);
+        }
+
+    }
+
     static void FileRead()
     {
         Console.WriteLine("Read input.txt file with using the File keyword");
@@ -91,7 +119,7 @@ class CSharpPractice
                 line = sr.ReadLine();
             }
             sr.Close();
-        };
+        }
     }
 
     static void ReadFile()
