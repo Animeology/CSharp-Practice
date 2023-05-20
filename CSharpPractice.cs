@@ -1,10 +1,13 @@
 ﻿using System.IO;
+
 class CSharpPractice
 {
 
     static void Main(string[] args)
     {
-        ReadFile();
+        FileRead();
+        // UsingReadFile();
+        // ReadFile();
 
         //int x = Convert.ToInt32(Console.ReadLine());
         //int y = Convert.ToInt32(Console.ReadLine());
@@ -58,6 +61,37 @@ class CSharpPractice
         // ReadUserInput();
         // PrintLines();
         // HelloWorld();
+    }
+
+    static void FileRead()
+    {
+        Console.WriteLine("Read input.txt file with using the File keyword");
+
+        string fileName = "input.txt";
+        string readText = File.ReadAllText(fileName);
+
+
+        Console.WriteLine(readText);        
+    }
+
+    static void UsingReadFile()
+    {
+        Console.WriteLine("Read input.txt file with 'using' keyword");
+
+        string fileName = "input.txt";
+        string line;
+
+        using (StreamReader sr = new StreamReader(fileName))
+        {
+            line = sr.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = sr.ReadLine();
+            }
+            sr.Close();
+        };
     }
 
     static void ReadFile()
