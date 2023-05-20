@@ -1,15 +1,15 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
+﻿using System.IO;
 class CSharpPractice
 {
 
     static void Main(string[] args)
     {
+        ReadFile();
 
-        int x = Convert.ToInt32(Console.ReadLine());
-        int y = Convert.ToInt32(Console.ReadLine());
+        //int x = Convert.ToInt32(Console.ReadLine());
+        //int y = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine(Add(x, y));
+        //Console.WriteLine(Add(x, y));
 
         //string name = Console.ReadLine();
         // GreetingAndFarewell(name);
@@ -60,7 +60,25 @@ class CSharpPractice
         // HelloWorld();
     }
 
-    public static int Add(int x, int y)
+    static void ReadFile()
+    {
+        Console.WriteLine("Read the contents of input.txt text file");
+        
+        string fileName = "input.txt";
+        string line;
+
+        StreamReader sr = new StreamReader(fileName);
+        line = sr.ReadLine();
+
+        while (line != null)
+        {
+            Console.WriteLine(line);
+            line = sr.ReadLine();
+        }
+        sr.Close();
+    }
+
+    static int Add(int x, int y)
     {
         return x + y;
     }
