@@ -2,10 +2,9 @@
 
 class CSharpPractice
 {
-
     static void Main(string[] args)
     {
-        AppendFile();
+        //AppendFile();
         // WriteFile();
         // FileRead();
         // UsingReadFile();
@@ -206,7 +205,6 @@ class CSharpPractice
         Console.WriteLine("Hello, {0}", p.name);
         Console.WriteLine("You are {0}", p.age);
     }
-
 
     static void CheckForEven()
     {
@@ -497,7 +495,6 @@ class CSharpPractice
         while (num != 0);
     }
 
-
     static void WhileLoop()
     {
         Console.WriteLine("Input a number and it would multiple by 10 and keeps going until the input is 0");
@@ -586,7 +583,6 @@ class CSharpPractice
         }
     }
 
-
     static void IfCalculator()
     {
         Console.WriteLine("Input two numbers and operation and it would calculate for you");
@@ -639,7 +635,6 @@ class CSharpPractice
             Console.WriteLine();
         }
     }
-
 
     static void Square()
     {
@@ -901,7 +896,6 @@ class CSharpPractice
     {
         Console.Write("Hello World!");
     }
-
 }
 
 
