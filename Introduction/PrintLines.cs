@@ -7,6 +7,5 @@
             Console.WriteLine("Hello");
             Console.WriteLine("Joseph");
         }
-
     }
 }
