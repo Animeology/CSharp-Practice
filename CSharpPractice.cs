@@ -15,6 +15,8 @@ class CSharpPractice
         // DataTypes A
         CalculateRadius.CalculateShapeFromRadius();
         BasicCalculator.Calculator();
+        Reverse.ReverseCharacters();
+        Temperature.CalculateTemperature();
     }
 
 
@@ -760,32 +762,4 @@ class CSharpPractice
         Console.WriteLine("Area= {0}", area);
         Console.WriteLine("Diagonal = {0}", diagonal);
     }
-
-    static void CalculateTemperature()
-    {
-        Console.WriteLine("Input your degree in Celsius to convert to Kelvin and Fahrenheit:");
-
-        int celsius = Convert.ToInt32(Console.ReadLine());
-
-        int kelvin = celsius + 273;
-        int fahrenheit = celsius * 18 / 10 + 32;
-
-        Console.WriteLine("Kelvin: " + kelvin + " degrees");
-        Console.WriteLine("Fahrenheit: " + fahrenheit + " degrees");
-
-        Console.WriteLine("Kelvin = {0}", kelvin);
-        Console.WriteLine("Fahrenheit = {0}", fahrenheit);
-    }
-
-    static void Reverse()
-    {
-        Console.WriteLine("Input 3 letters to print out in reverse:");
-
-        char a = Convert.ToChar(Console.Read());
-        char b = Convert.ToChar(Console.Read());
-        char c = Convert.ToChar(Console.Read());
-
-        Console.WriteLine("{0}, {1}, {2}", c, b, a);
-    }
-
 }
