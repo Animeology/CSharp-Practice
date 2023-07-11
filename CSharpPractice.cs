@@ -6,6 +6,7 @@ class CSharpPractice
     {
         HelloWorld.PrintHelloWorld();
         PrintLines.PrintingLines();
+        ReadUserInput.ReadingUserInput();
     }
 
 
@@ -824,13 +825,4 @@ class CSharpPractice
         string x = Console.ReadLine();
         Console.WriteLine("Nice to meet you, " + x);
     }
-
-    static void ReadUserInput()
-    {
-        Console.WriteLine("What is your favorite animal?");
-        Console.Read();
-        Console.WriteLine("Mine too!");
-    }
-
-
 }
