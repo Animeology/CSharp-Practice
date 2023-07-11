@@ -29,6 +29,7 @@
             SumSquare.SquaredNumber();
             MultiplicationOfThreeFactors.MultiplyThreeFactors();
             Division.DivisionAndModule();
+            ZeroDivision.DivideByZero();
         }
 
 
@@ -661,23 +662,6 @@
             Console.WriteLine("(13 - 2) * {0} = {1}", x, (13 - 2) * x);
             Console.WriteLine("({0} + -2) * (20 / 10) = {1}", x, (x + -2) * (20 / 10));
             Console.WriteLine("(12 + {0} / (5 - 4) = {1}", x, (12 + x) / (5 - 4));
-        }
-
-        static void DivideByZero()
-        {
-            Console.WriteLine("Divide a number by zero and an exception will appear, otherwise it is just a normal division");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            try
-            {
-                Console.WriteLine(x / y);
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Cannot Divide By Zero");
-            }
         }
 
     }
