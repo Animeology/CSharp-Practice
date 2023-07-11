@@ -2,7 +2,7 @@
 {
     public class Comment
     {
-        static void Commenting()
+        public static void Commenting()
         {
             // This is a comment
         }
