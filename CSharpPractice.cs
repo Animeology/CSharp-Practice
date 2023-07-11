@@ -706,6 +706,4 @@ class CSharpPractice
 
         Console.WriteLine("{0}x{0}={1}", num, squaredNum);
     }
-
-
 }
