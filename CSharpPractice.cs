@@ -7,6 +7,7 @@ class CSharpPractice
         HelloWorld.PrintHelloWorld();
         PrintLines.PrintingLines();
         ReadUserInput.ReadingUserInput();
+        StoreUserInput.StoringUserInput();
     }
 
 
@@ -817,12 +818,5 @@ class CSharpPractice
     static void Comment()
     {
         // This is a comment
-    }
-
-    static void StoreUserInput()
-    {
-        Console.WriteLine("What is your name?");
-        string x = Console.ReadLine();
-        Console.WriteLine("Nice to meet you, " + x);
     }
 }
