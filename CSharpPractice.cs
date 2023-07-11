@@ -37,7 +37,7 @@
 
             // Geometry A
             SquareShape.Square();
-            RectangleShape.Rectangle();
+            RectangleShape.Rectangle(); 
         }
 
 
@@ -595,7 +595,6 @@
             }
 
         }
-
         
     }
 }
