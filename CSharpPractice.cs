@@ -1,68 +1,14 @@
-﻿using System.IO;
+﻿using CSharp_Practice.Introduction;
 
 class CSharpPractice
 {
     static void Main(string[] args)
     {
-        //AppendFile();
-        // WriteFile();
-        // FileRead();
-        // UsingReadFile();
-        // ReadFile();
-
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //int y = Convert.ToInt32(Console.ReadLine());
-
-        //Console.WriteLine(Add(x, y));
-
-        //string name = Console.ReadLine();
-        // GreetingAndFarewell(name);
-
-        // Greeting();
-        // Farewell();
-        // StructUsage();
-        // CheckForEven();
-        // ExceptionsChecker();
-        // VowelOrNot();
-        // OddOrEvenDescending();
-        // PrimeNumber();
-        // Product();
-        // AbsoluteValue();
-        // Digits();
-        // CalculateGrade();
-        // InfiniteMultiplication();
-        // RepeatingNumber();
-        // SumOfInfiniteNums();
-        // NumberRange();
-        // DoWhileLoop();
-        // WhileLoop();
-        // GreatestNumber();
-        // PosOrNeg();
-        // SwitchCalculator();
-        // IfCalculator();
-        // Rectangle();
-        // Square();
-        // Equivalent();
-        // Average();
-        // Priority();
-        // DivideByZero();
-        // DivisionAndModule();
-        // MultiplyThreeFactors();
-        // SquaredNumber();
-        // RandomGenerator();
-        // MultiplicationTable();
-        // CalculateTimeDistance();
-        // CalculateRectangle();
-        // CalculateTemperature();
-        // Reverse();
-        // Calculator();
-        // CalculateShapeFromRadius();
-        // Comment();
-        // StoreUserInput();
-        // ReadUserInput();
-        // PrintLines();
-        // HelloWorld();
+        HelloWorld.PrintHelloWorld();
+        PrintLines.PrintingLines();
     }
+
+
     static void AppendFile()
     {
         Console.WriteLine("Write whatever and it will add to the current 'output.txt' file if created already");
@@ -886,16 +832,5 @@ class CSharpPractice
         Console.WriteLine("Mine too!");
     }
 
-    static void PrintLines()
-    {
-        Console.WriteLine("Hello");
-        Console.WriteLine("Joseph");
-    }
 
-    static void HelloWorld()
-    {
-        Console.Write("Hello World!");
-    }
 }
-
-
