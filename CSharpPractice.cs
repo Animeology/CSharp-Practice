@@ -25,6 +25,8 @@
             MultiplicationTable.CreateMultiplicationTable();
             RandomNumberGenerator.RandomGenerator();
 
+            // Arithmetic
+            SumSquare.SquaredNumber();
         }
 
 
