@@ -20,6 +20,7 @@ class CSharpPractice
         Rectangle.CalculateRectangle();
         TimeDistance.CalculateTimeDistance();
         MultiplicationTable.CreateMultiplicationTable();
+        RandomNumberGenerator.RandomGenerator();
 
     }
 
@@ -706,17 +707,5 @@ class CSharpPractice
         Console.WriteLine("{0}x{0}={1}", num, squaredNum);
     }
 
-    static void RandomGenerator()
-    {
-        Console.WriteLine("Input two numbers and it would select a random number between these two numbers");
-
-        int firstNum = Convert.ToInt32(Console.ReadLine());
-        int secondNum = Convert.ToInt32(Console.ReadLine());
-
-        Random rnd = new Random();
-        int randNum = rnd.Next(firstNum, secondNum);
-
-        Console.WriteLine("The random number between {0} and {1} is {2}", firstNum, secondNum, randNum);
-    }
 
 }
