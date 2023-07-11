@@ -3,6 +3,7 @@
     using DataTypesA;
     using Introduction;
     using Arithmetic;
+    using GeometryA;
 
     class CSharpPractice
     {
@@ -33,6 +34,9 @@
             PriorityOrder.Priority();
             AverageSum.Average();
             EquivalentOperations.Equivalent();
+
+            // Geometry A
+            SquareShape.Square();
         }
 
 
@@ -600,23 +604,6 @@
             int height = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < height; i++)
-            {
-                for (int j = 0; j < width; j++)
-                {
-                    Console.Write("{0}", num);
-                }
-                Console.WriteLine();
-            }
-        }
-
-        static void Square()
-        {
-            Console.WriteLine("Input the number and the width of the square and it would print out the square of the width with the number");
-
-            int num = Convert.ToInt32(Console.ReadLine());
-            int width = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < width; i++)
             {
                 for (int j = 0; j < width; j++)
                 {
