@@ -8,6 +8,7 @@ class CSharpPractice
         PrintLines.PrintingLines();
         ReadUserInput.ReadingUserInput();
         StoreUserInput.StoringUserInput();
+        Comment.Commenting();
     }
 
 
@@ -813,10 +814,5 @@ class CSharpPractice
 
         Console.WriteLine("Surface: " + surface);
         Console.WriteLine("Volume: " + volume);
-    }
-
-    static void Comment()
-    {
-        // This is a comment
     }
 }
