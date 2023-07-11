@@ -1,14 +1,20 @@
 ﻿using CSharp_Practice.Introduction;
+using CSharp_Practice.DataTypesA;
 
 class CSharpPractice
 {
     static void Main(string[] args)
     {
+        // Introduction
         HelloWorld.PrintHelloWorld();
         PrintLines.PrintingLines();
         ReadUserInput.ReadingUserInput();
         StoreUserInput.StoringUserInput();
         Comment.Commenting();
+
+        // DataTypes A
+        CalculateRadius.CalculateShapeFromRadius();
+        BasicCalculator.Calculator();
     }
 
 
@@ -782,37 +788,4 @@ class CSharpPractice
         Console.WriteLine("{0}, {1}, {2}", c, b, a);
     }
 
-    static void Calculator()
-    {
-        Console.WriteLine("Input 2 numbers to calculate through all operations:");
-
-        int x = Convert.ToInt32(Console.ReadLine());
-        int y = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine("Addition: " + (x + y));
-        Console.WriteLine("Subtraction: " + (x - y));
-        Console.WriteLine("Multiplication: " + (x * y));
-        Console.WriteLine("Division: " + (x / y));
-        Console.WriteLine("Modulus: " + (x % y));
-
-        Console.WriteLine("{0} + {1} = {2}", x, y, x + y);
-        Console.WriteLine("{0} - {1} = {2}", x, y, x - y);
-        Console.WriteLine("{0} * {1} = {2}", x, y, x * y);
-        Console.WriteLine("{0} / {1} = {2}", x, y, x / y);
-        Console.WriteLine("{0} mod {1} = {2}", x, y, x % y);
-    }
-
-    static void CalculateShapeFromRadius()
-    {
-        Console.WriteLine("Input a radius of your choice to calculate the Surface and Volume of the shape:");
-
-        float radius = Convert.ToSingle(Console.ReadLine());
-        float pi = 3.14159265359f;
-
-        float surface = 4 * pi * (radius * radius);
-        float volume = 4 / 3 * pi * (radius * radius * radius);
-
-        Console.WriteLine("Surface: " + surface);
-        Console.WriteLine("Volume: " + volume);
-    }
 }
