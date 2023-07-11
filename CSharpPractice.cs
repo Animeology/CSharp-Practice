@@ -17,6 +17,7 @@ class CSharpPractice
         BasicCalculator.Calculator();
         Reverse.ReverseCharacters();
         Temperature.CalculateTemperature();
+        Rectangle.CalculateRectangle();
     }
 
 
@@ -575,7 +576,7 @@ class CSharpPractice
 
     }
 
-    static void Rectangle()
+    static void RectangleShape()
     {
         Console.WriteLine("Input the number and the width of the square and it would print out the rectangle of the width and height with the number");
 
@@ -747,19 +748,4 @@ class CSharpPractice
         Console.WriteLine("Speed in miles/h is {0}", milesPerHour);
     }
 
-    static void CalculateRectangle()
-    {
-        Console.WriteLine("Input two numbers to get the Perimeter, Area, and the Diagonal of the Rectangle");
-
-        double x = Convert.ToDouble(Console.ReadLine());
-        double y = Convert.ToDouble(Console.ReadLine());
-
-        double perimeter = (x * 2) + (y * 2);
-        double area = (x * y);
-        double diagonal = Convert.ToDouble(Math.Sqrt((x * x) + (y * y)));
-
-        Console.WriteLine("Perimeter = {0}", perimeter);
-        Console.WriteLine("Area= {0}", area);
-        Console.WriteLine("Diagonal = {0}", diagonal);
-    }
 }
