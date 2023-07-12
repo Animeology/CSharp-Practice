@@ -6,6 +6,7 @@
     using GeometryA;
     using CSharp_Practice.FlowControlsA;
     using CSharp_Practice.FlowControlsB;
+    using CSharp_Practice.FlowControlsC;
 
     class CSharpPractice
     {
@@ -56,6 +57,12 @@
             InfiniteMultiplication.InfiniteProduct();
             TheGradeCalculator.CalculateGrade();
             CountDigits.Digits();
+
+            // Flow Controls C
+            AbsoluteValue.DisplayAbsoluteValue();
+            Product.DisplayProduct();
+            PrimeNumber.PrimeNumberChecker();
+            DescendingNumbers.OddOrEvenDescending();
         }
 
 
@@ -261,101 +268,5 @@
             //        break;
             //}
         }
-
-        static void OddOrEvenDescending()
-        {
-            Console.WriteLine("Input two numbers which will be a range of numbers");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Odd or Even?");
-            string choice = Console.ReadLine();
-
-            switch (choice)
-            {
-                case "odd":
-                case "Odd":
-                    for (int i = x; i >= y; i--)
-                    {
-                        if (i % 2 != 0)
-                        {
-                            Console.Write("{0}, ", i);
-                        }
-                    }
-                    break;
-                case "even":
-                case "Even":
-                    for (int i = x; i >= y; i--)
-                    {
-                        if (i % 2 == 0)
-                        {
-                            Console.Write("{0}, ", i);
-                        }
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Not a valid choice");
-                    break;
-            }
-
-        }
-
-        static void PrimeNumber()
-        {
-            Console.WriteLine("Input a number and it will tell if it is a prime number or not");
-
-            int prime = Convert.ToInt32(Console.ReadLine());
-            int divider = 2;
-
-            while (prime % divider != 0)
-            {
-                divider++;
-            }
-
-            if (divider == prime)
-            {
-                Console.WriteLine("{0} is a prime number", prime);
-            }
-            else
-            {
-                Console.WriteLine("{0} is not a prime number", prime);
-            }
-        }
-
-        static void Product()
-        {
-            Console.WriteLine("Input two numbers and the product of the two numbers is displayed (not using multiplication)");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            int total = 0;
-
-            for (int i = 0; i < y; i++)
-            {
-                total += x;
-            }
-
-            Console.WriteLine("{0}x{1}={2}", x, y, total);
-        }
-
-        static void AbsoluteValue()
-        {
-            Console.WriteLine("Input a number and the absolute value of the number is printed");
-
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            if (num > 0)
-            {
-                Console.WriteLine("Absolute Value is {0}", num);
-            }
-            else
-            {
-                num = -num;
-                Console.WriteLine("Absolute Value is {0}", num);
-            }
-        }
-
     }
 }
