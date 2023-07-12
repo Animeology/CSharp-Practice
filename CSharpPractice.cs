@@ -7,7 +7,8 @@
     using FlowControlsA;
     using FlowControlsB;
     using FlowControlsC;
-    using CSharp_Practice.DataTypesB;
+    using DataTypesB;
+    using CSharp_Practice.FunctionsA;
 
     class CSharpPractice
     {
@@ -70,6 +71,12 @@
             NumberCheckerException.ExceptionsChecker();
             ConditionalOperator.CheckForEven();
             StructureUse.StructUsage();
+
+            // Functions A
+            GreetingAndFarewell.Greeting();
+            GreetingAndFarewell.Farewell();
+            FunctionWithParameters.GreetingAndFarewell("Joseph");
+            FunctionWithReturnValue.Add(10, 15);
         }
 
 
@@ -179,25 +186,5 @@
             sr.Close();
         }
 
-        static int Add(int x, int y)
-        {
-            return x + y;
-        }
-
-        static void GreetingAndFarewell(string name)
-        {
-            Console.WriteLine("Hello, {0}", name);
-            Console.WriteLine("Good Bye!");
-        }
-
-        static void Greeting()
-        {
-            Console.WriteLine("Hello");
-        }
-
-        static void Farewell()
-        {
-            Console.WriteLine("Good Bye!");
-        }
     }
 }
