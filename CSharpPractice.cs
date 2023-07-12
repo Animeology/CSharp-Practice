@@ -44,6 +44,11 @@
             TheIFCalculator.IfCalculator();
             TheSwitchCalculator.SwitchCalculator();
             PositiveAndNegative.PosOrNeg();
+            GreatestNumber.SearchForGreatestNumber();
+            WhileLoop.CreateWhileLoop();
+            DoWhileLoop.CreateDoWhileLoop();
+            NumberRange.DisplayNumberRange();
+            InfiniteSum.SumOfInfiniteNums();
 
         }
 
@@ -431,94 +436,6 @@
             for (int i = 0; i < repeat; i++)
             {
                 Console.Write(num);
-            }
-
-        }
-
-        static void SumOfInfiniteNums()
-        {
-            Console.WriteLine("Request a number and it would keep adding it until the number is 0");
-
-            int num;
-            int sum = 0;
-
-            do
-            {
-                num = Convert.ToInt32(Console.ReadLine());
-                sum = num + sum;
-
-                Console.WriteLine(sum);
-            }
-            while (num != 0);
-            Console.WriteLine("Finished!");
-        }
-
-        static void NumberRange()
-        {
-            Console.WriteLine("Input two numbers and it would display all the numbers within the range");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = x; i <= y; i++)
-            {
-                Console.Write("{0} ", i);
-            }
-        }
-
-        static void DoWhileLoop()
-        {
-            Console.WriteLine("Input a number and it would multiple by 10 and keeps going until the input is 0");
-
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            do
-            {
-                Console.WriteLine(num * 10);
-                num = Convert.ToInt32(Console.ReadLine());
-            }
-            while (num != 0);
-        }
-
-        static void WhileLoop()
-        {
-            Console.WriteLine("Input a number and it would multiple by 10 and keeps going until the input is 0");
-
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            while (num != 0)
-            {
-                Console.WriteLine(num * 10);
-                num = Convert.ToInt32(Console.ReadLine());
-            }
-        }
-
-        static void GreatestNumber()
-        {
-            Console.WriteLine("Input 3 numbers and it would display the greatest one out of the three");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-            int z = Convert.ToInt32(Console.ReadLine());
-
-            if (x > y && x > z)
-            {
-                Console.WriteLine(x);
-            }
-
-            else if (y > x && y > z)
-            {
-                Console.WriteLine(y);
-            }
-
-            else if (z > x && z > y)
-            {
-                Console.WriteLine(z);
-            }
-
-            else
-            {
-                Console.WriteLine("There are all equal");
             }
 
         }
