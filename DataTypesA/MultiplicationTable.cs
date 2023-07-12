@@ -4,7 +4,7 @@
     {
         public static void CreateMultiplicationTable()
         {
-            Console.WriteLine("Input the desire number to go through the multiplicatoin table to 10");
+            Console.WriteLine("Input the desire number to go through the multiplication table to 10");
 
             int num = Convert.ToInt32(Console.ReadLine());
 
