@@ -8,7 +8,7 @@
     using FlowControlsB;
     using FlowControlsC;
     using DataTypesB;
-    using CSharp_Practice.FunctionsA;
+    using FunctionsA;
 
     class CSharpPractice
     {
