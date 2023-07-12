@@ -1,6 +1,6 @@
 ﻿namespace CSharp_Practice.FlowControlsC
 {
-    public class DescendingOdd
+    public class DescendingNumbers
     {
         public static void OddOrEvenDescending()
         {
