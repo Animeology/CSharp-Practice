@@ -4,9 +4,9 @@
     using Introduction;
     using Arithmetic;
     using GeometryA;
-    using CSharp_Practice.FlowControlsA;
-    using CSharp_Practice.FlowControlsB;
-    using CSharp_Practice.FlowControlsC;
+    using FlowControlsA;
+    using FlowControlsB;
+    using FlowControlsC;
 
     class CSharpPractice
     {
