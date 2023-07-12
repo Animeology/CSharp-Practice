@@ -7,6 +7,7 @@
     using FlowControlsA;
     using FlowControlsB;
     using FlowControlsC;
+    using CSharp_Practice.DataTypesB;
 
     class CSharpPractice
     {
@@ -63,6 +64,12 @@
             Product.DisplayProduct();
             PrimeNumber.PrimeNumberChecker();
             DescendingNumbers.OddOrEvenDescending();
+
+            // Data Types B
+            VowelSwitch.VowelOrNot();
+            NumberCheckerException.ExceptionsChecker();
+            ConditionalOperator.CheckForEven();
+            StructureUse.StructUsage();
         }
 
 
@@ -191,82 +198,6 @@
         static void Farewell()
         {
             Console.WriteLine("Good Bye!");
-        }
-
-        struct Person
-        {
-            public string name;
-            public int age;
-        }
-
-        static void StructUsage()
-        {
-            Person p;
-            p.name = "Joseph";
-            p.age = 25;
-
-            Console.WriteLine("Hello, {0}", p.name);
-            Console.WriteLine("You are {0}", p.age);
-        }
-
-        static void CheckForEven()
-        {
-            Console.WriteLine("Input two numbers and it would check if both are even or not");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            bool isEven = ((x % 2 == 0) && (y % 2 == 0)) ? true : false;
-            Console.WriteLine(isEven);
-        }
-
-        static void ExceptionsChecker()
-        {
-            Console.WriteLine("Input a word and it would detect if it is a number or not");
-
-            string line = Convert.ToString(Console.ReadLine());
-
-            try
-            {
-                Convert.ToInt32(line);
-                Console.WriteLine("It is a number.");
-            }
-            catch
-            {
-                Console.WriteLine("It is not a number.");
-            }
-        }
-
-        static void VowelOrNot()
-        {
-            Console.WriteLine("Input a letter and check if it is a vowel or not");
-
-            char letter = Convert.ToChar(Console.Read());
-
-            // If statement
-            if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
-            {
-                Console.WriteLine("{0} is a vowel", letter);
-            }
-            else
-            {
-                Console.WriteLine("{0} is a vowel", letter);
-            }
-
-            // switch
-            //switch (letter)
-            //{
-            //    case 'a':
-            //    case 'e':
-            //    case 'i':
-            //    case 'o':
-            //    case 'u':
-            //        Console.WriteLine("{0} is a vowel", letter);
-            //        break;
-            //    default:
-            //        Console.WriteLine("{0} is a vowel", letter);
-            //        break;
-            //}
         }
     }
 }
